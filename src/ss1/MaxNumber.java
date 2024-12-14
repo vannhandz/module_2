@@ -11,7 +11,11 @@ public class MaxNumber {
         System.out.print("Nhap so B: ");
         int b = sc.nextInt();
 
-        int max=(a>b)?a:b;
+        if (a > b){
+            System.out.println("Max: "+a);
+        }else {
+            System.out.println("Min: "+b);
+        }
         System.out.println("So lon nhat: "+max);
     }
 }
