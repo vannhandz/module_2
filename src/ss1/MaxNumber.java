@@ -16,6 +16,6 @@ public class MaxNumber {
         }else {
             System.out.println("Min: "+b);
         }
-        System.out.println("So lon nhat: "+max);
+
     }
 }
