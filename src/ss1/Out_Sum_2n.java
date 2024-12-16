@@ -13,7 +13,7 @@ public class Out_Sum_2n {
             for (int j = 1; j <= (2*i-1); j++) {
                 check*=j;
             }
-            sum=1.0/check;
+            sum+=1.0/check;
         }
         System.out.println(sum);
 

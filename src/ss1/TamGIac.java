@@ -7,7 +7,7 @@ public class TamGIac {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap n: ");
         int n = sc.nextInt();
-        //        hinh 1
+        //        hinh a
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
                 if (i == j || j < i) {
@@ -19,7 +19,7 @@ public class TamGIac {
             System.out.println();
         }
         System.out.println();
-        //        hinh 2
+        //        hinh b
         for (int i = n; i >=1; i--) {
             for (int j = 1; j <= n; j++) {
                 if (i == j || j < i) {
@@ -31,7 +31,7 @@ public class TamGIac {
             System.out.println();
         }
         System.out.println();
-        //        hinh 3
+        //        hinh c
         for (int i =1; i <=n; i++) {
             for (int j = n; j >=1; j--) {
                 if (i == j || j<i) {
@@ -43,10 +43,41 @@ public class TamGIac {
             System.out.println();
         }
         System.out.println();
-        //        hinh 4
+        //        hinh d
         for (int i =n; i >=1; i--) {
             for (int j = n; j >=1; j--) {
                 if (i == j || j<i) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        //        hinh e
+        for (int i = n; i >=1; i--) {
+            for (int j = 1; j <= n; j++) {
+                if (i == j || j ==1||i==n ) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        System.out.println();
+        //        hinh f
+        for (int i =1; i <=n; i++) {
+            for (int j = n; j >=1; j--) {
+                if (i == j || j<i) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            for (int j = 1; j <= n; j++) {
+                if (i == j || j < i) {
                     System.out.print("* ");
                 } else {
                     System.out.print("  ");

@@ -9,8 +9,7 @@ public class Fibo {
         System.out.print("Nhap n: ");
         int n = sc.nextInt();
         int sum=1;
-        int x=0;
-        int y=1;
+        int x=0, y=1;
         for (int i = 1; i <= n; i++) {
             sum=x+y;
             x=y;
