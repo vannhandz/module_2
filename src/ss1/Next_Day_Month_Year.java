@@ -51,7 +51,7 @@ public class Next_Day_Month_Year {
                     System.out.println("truoc do: " + 31 + " " + 12 + " " + (year - 1));
                 } else {
                     System.out.println("tiep theo: " + (day + 1) + " " + month + " " + year);
-                    System.out.println("tiep theo: " + (day - 1) + " " + month + " " + year);
+                    System.out.println("truoc do: " + (day - 1) + " " + month + " " + year);
                 }
             }
         } else {
