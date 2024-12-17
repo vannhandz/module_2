@@ -8,10 +8,11 @@ public class Cb_3bai {
         System.out.print("Nhap N: ");
         int n = sc.nextInt();
         String str =String.valueOf(n);
-        boolean flag = false;
+        boolean flag = true;
         for (int i = 0; i < str.length()/2; i++) {
-                if (str.charAt(i) == str.charAt(str.length()-i-1)) {
-                    flag = true;
+                if (str.charAt(i) != str.charAt(str.length()-i-1)) {
+                    flag = false;
+                    break;
                 }
         }
         if (flag) {
