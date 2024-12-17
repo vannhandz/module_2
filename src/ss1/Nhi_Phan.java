@@ -1,3 +1,5 @@
+package ss1;
+
 import java.util.Scanner;
 
 public class Nhi_Phan {
@@ -5,13 +7,10 @@ public class Nhi_Phan {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap N: ");
         int n = sc.nextInt();
-        int cout =0;
         String check= "";
         for (int i = 0; n>0; i++) {
-            cout=n%2;
+            check=n%2 + check;
             n/=2;
-            check=cout+check;
-
         }
         System.out.print(check);
     }

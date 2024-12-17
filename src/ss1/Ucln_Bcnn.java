@@ -14,11 +14,10 @@ public class Ucln_Bcnn {
         for (int i = a; i>=1; i--) {
             if(a%i==0 && b%i==0) {
                 ucln=i;
-                bcnn=(a*b)/ucln;
                 break;
             }
         }
         System.out.println("Ucln: "+ucln);
-        System.out.println("Bcnn: "+bcnn);
+        System.out.println("Bcnn: "+(bcnn=(a*b)/ucln));
     }
 }
