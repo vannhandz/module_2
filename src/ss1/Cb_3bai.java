@@ -19,27 +19,36 @@ public class Cb_3bai {
         }else{
             System.out.println("Khong doi xung");
         }
-
-
-
-        if(n%Math.sqrt(n)==0){
-            System.out.println("Khong phai nguyen to");
-        }else {
-            System.out.println("la nguyen to");
+        boolean flag1 = true;
+        if (n<2)
+        {
+            flag1 = false;
         }
-        int check=0;
-        boolean flag1=false;
-        for (int i = 0; i<n; i++) {
-            check%=10;
-            n/=10;
-            if (check>n/10) {
-                flag1=true;
+        for (int i = 2; i <=n/2; i++) {
+            if (n%i==0)
+            {
+                flag1 = false;
             }
         }
-        if (flag1) {
-            System.out.println("ko tang");
-        }else
+        if (flag1)
+        {
+            System.out.println("La nguyen to");
+        }else {
+            System.out.println("Khong phai nguyen to");
+        }
+
+        int check=0;
+        boolean flag2=true;
+        for (int i = 0; i<str.length()-1; i++) {
+            if(str.charAt(i)>=str.charAt(i+1)){
+                flag2=false;
+                break;
+            }
+        }
+        if (flag2) {
             System.out.println("tang");
+        }else
+            System.out.println("Khong tang");
 
     }
 }
